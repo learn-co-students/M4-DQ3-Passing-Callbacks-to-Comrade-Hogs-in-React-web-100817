@@ -29,6 +29,7 @@ export default class GalaxySNote7 extends React.Component {
 
   exclaim = () => {
     if (this.state.panicked) return
+    // if the aboove is commented out, GalaxySNote7 can be triggered rapidly without reset
     this.setState({panicked: true})
     setTimeout(this.relax, 3500)
     this.exclaimAudio.play()
